@@ -4,19 +4,23 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 16px;
+}
+
 .nav{
-    padding: 80px;
+    padding: 5rem;
     display: flex;
     justify-content: space-between;
 }
 
-/* .logo{
-    height:30px;
-} */
+.logo{
+    height:2.5rem;
+}
 
 .btn-1{
-    border-radius: 20px;
-    padding:10px 35px;
+    border-radius: 5rem;
+    padding:0.625rem 2.18rem;
     border-color: hsl(321, 100%, 78%);
     color: hsl(321, 100%, 78%);
     background-color: white;
@@ -26,50 +30,57 @@
     border-color: black;
     display: flex;
     justify-content: center;
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
 }
 
 .main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding:100px;
+    padding:6.25rem;
 
 }
 
 .tittle{
     font-family: 'Poppins', sans-serif;
-    font-size: x-large;
+    font-size: 1.75rem;
+    text-align: center;
 }
 
 .desc{
     font-family: 'Open Sans', sans-serif;
 }
 
+.svg-screen{
+    width: 90%;
+    max-width: 1085px;
+}
 
 .btn-2{
-    border-radius: 80px;
-    padding:25px 100px;
+    border-radius: 5rem;
+    padding:1.5rem 6.25rem;
     border-color: hsl(322, 100%, 66%);
     color: white;
     background-color: hsl(322, 100%, 66%);
+    margin-top: 5rem;
 }
 
 .cont{
     display: flex;
     justify-content: space-evenly;
-    padding:150px;
+    padding:0rem;
+    margin-bottom: 15rem;
 }
 
 .grow{
-    height:50vh;
+    height:25rem;
 }
 
 .flow{
-    height:50vh;
+    height:25rem;
 }
 .users{
-    height:50vh;
+    height:25rem;
 }
 
 .ready{
@@ -81,17 +92,22 @@
 .stats{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
 }
 
 .stats-nums{
     font-family: 'Poppins', sans-serif;
-    font-size: 80px;
+    font-size: 5rem;
 }
 
 .stats-p{
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+    font-size: 2rem;
+}
+
+.stats-block{
+    margin-bottom: 10rem;
 }
 
 .cont-text{
@@ -102,29 +118,126 @@
 
 .cont-tittle{
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
 }
 
 .ready{
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 
 .foot-curve{
-    margin-top: 120px;
+    margin-top: 7.5rem;
     width: 100%;
 }
 
 .foot-div{
+    padding:3.125rem;
     background-color: hsl(192, 100%, 9%);
     height: 70vh;
     color: white;
+    display: flex;
+    justify-content: space-around;
 }
+
 
 .foot-div{
     display:flex;
+    justify-content: space-around;
 }
 
 .cont-det{
     display: flex;
 }
+
+.foot-curve{
+    transform: translateY(5px);
+    display:inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+      font-size: 6px;
+    }
+
+    .stats{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20rem;
+               
+    }
+
+    .cont{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30rem;
+    }
+
+    .stats-nums{
+        font-size: 10rem;
+    }
+
+    .cont-tittle{
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .cont-1{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .grow{
+        height: 40rem;
+        margin-bottom: 10rem;
+        
+    }
+    .flow{
+        height: 40rem;
+        margin-bottom: 10rem;
+    }
+
+    .users{
+        height: 40rem;
+        margin-bottom: 10rem;
+    }
+
+    .stats-cont-1{
+        margin-bottom: 10rem;
+    }
+
+    .stats-cont-2{
+        margin-bottom: 20rem;
+    }
+
+    .cont-text{
+        padding: 0 5rem;
+        text-align: center;
+    }
+
+    .cont-text p{
+        font-size: 2.5em;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .tittle h1{
+        padding: 0 5rem;
+    }
+
+    .desc{
+        font-size: 1.7rem;
+    }
+
+    .main{
+        margin-bottom: 10rem;
+    }
+
+    .btn-2{
+        margin-top: 7rem;
+    }
+
+    .ready{
+        margin-top: 15rem;
+        margin-bottom: 25rem;
+    }
+  }
